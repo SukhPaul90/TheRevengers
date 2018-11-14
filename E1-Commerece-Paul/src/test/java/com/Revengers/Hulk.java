@@ -9,13 +9,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+
 public class Hulk {
 
 	public static void main(String[] args) throws InterruptedException {
 
 		System.setProperty("webdrive.chrome.driver", "/Users/sukhsingh/Desktop/E1-Commerece-Paul/chromedriver");
 		WebDriver ant = new ChromeDriver();
-
+		
+		
 		ant.get("https://demo.oscommerce.com/");
 		ant.manage().window().fullscreen();
 		ant.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
